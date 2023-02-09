@@ -13,6 +13,7 @@
         <nav class=" navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <form class="mx-3 d-flex" action="{{ route('search') }}" method="get" role="search">
+                  @csrf
                     <input class="form-control me-2" type="search" placeholder="ابحث" name="search" aria-label="Search">
                     <button class="btn btn-outline-success mx-1" name="seachen" type="submit">ابحث</button>
                   </form>
